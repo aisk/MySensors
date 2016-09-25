@@ -10,6 +10,7 @@
 		479D56731D97A76D00713B6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D56721D97A76D00713B6E /* AppDelegate.swift */; };
 		479D56751D97A76D00713B6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 479D56741D97A76D00713B6E /* Assets.xcassets */; };
 		479D56781D97A76D00713B6E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 479D56761D97A76D00713B6E /* MainMenu.xib */; };
+		479D56821D97C68200713B6E /* SMC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D56811D97C68200713B6E /* SMC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +19,7 @@
 		479D56741D97A76D00713B6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		479D56771D97A76D00713B6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		479D56791D97A76D00713B6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		479D56811D97C68200713B6E /* SMC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 				479D56741D97A76D00713B6E /* Assets.xcassets */,
 				479D56761D97A76D00713B6E /* MainMenu.xib */,
 				479D56791D97A76D00713B6E /* Info.plist */,
+				479D56811D97C68200713B6E /* SMC.swift */,
 			);
 			path = MySensors;
 			sourceTree = "<group>";
@@ -130,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				479D56731D97A76D00713B6E /* AppDelegate.swift in Sources */,
+				479D56821D97C68200713B6E /* SMC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
