@@ -21,10 +21,10 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
             let alert = NSAlert()
             alert.messageText = "initailize SMC failed!"
             alert.runModal()
-            NSApplication.shared().terminate(self)
+            NSApplication.shared.terminate(self)
         }
         
-        statusItem = NSStatusBar.system().statusItem(withLength: NSSquareStatusItemLength)
+        statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
         let icon = NSImage(named: "ic_memory")
         icon?.isTemplate = true
         statusItem.image = icon
@@ -36,8 +36,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         let _ = SMCKit.close()
     }
     
-    func onQuitMenuItemClicked(_ sender: NSMenuItem) {
-        NSApplication.shared().terminate(self)
+    @objc func onQuitMenuItemClicked(_ sender: NSMenuItem) {
+        NSApplication.shared.terminate(self)
     }
     
     func menuWillOpen(_ menu: NSMenu) {
