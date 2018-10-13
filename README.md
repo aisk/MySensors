@@ -1,6 +1,8 @@
 # MySensors
 
-Show macOS's chip tempratures and fan speeds on menu bar.
+Minimal application which shows macOS's chip tempratures and fan speeds on menu bar.
+
+<img src="https://i.imgur.com/rgv0ots.png" width="451px" height="443px" />
 
 ## Build
 
