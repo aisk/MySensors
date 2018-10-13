@@ -10,6 +10,10 @@ Minimal application which shows macOS's chip tempratures and fan speeds on menu 
 $ xcodebuild
 ```
 
+## Prebuild Binary
+
+Go to the [release page](https://github.com/aisk/MySensors/releases).
+
 ## License
 
 MIT lisence with exceptions:
