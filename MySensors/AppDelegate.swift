@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  MySensors
 //
-//  Created by 安龙 on 25/09/2016.
-//  Copyright © 2016 asaka. All rights reserved.
+//  Created by An Long on 25/09/2016.
+//  Copyright © 2016 An Long. All rights reserved.
 //
 
 import Cocoa
@@ -65,22 +65,12 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     
     func getSensorsData() -> Array<SensorsData> {
         var result: Array<SensorsData> = []
-        
-        do {
-            let fans = try SMCKit.allFans()
-            var items: Array<(String, String)> = []
-            for fan in fans {
-                items.append((fan.name, String(try SMCKit.fanCurrentSpeed(fan.id))))
-            }
-            result.append(SensorsData(title: "Fan", items: items))
-        } catch {
-            // pass
-        }
+
         
         do {
             let temps = try SMCKit.allKnownTemperatureSensors()
             var items: Array<(String, String)> = []
-            
+
             for temp in temps {
                 items.append((temp.name, "\(try SMCKit.temperature(temp.code)) °C"))
             }
@@ -89,7 +79,18 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         } catch {
             // pass
         }
-        
+
+        do {
+            let fans = try SMCKit.allFans()
+            var items: Array<(String, String)> = []
+            for fan in fans {
+                items.append((fan.name, String(try SMCKit.fanCurrentSpeed(fan.id))))
+            }
+            result.append(SensorsData(title: "Fan Speed", items: items))
+        } catch {
+            // pass
+        }
+
         return result
     }
     
